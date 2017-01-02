@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Geoful</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <h1>geoful.jn.gl</h1>
+
+    <p>A simple HTTP API into a GeoIP database</p>
+
+    <div class="example">
+      <p>Lookup the country and ASN of an IP</p>
+      <div class="code">
+        <pre>
+$ curl -s http://localhost:8080/ip/142.77.1.1 | jq
+{
+  "country": "US",
+  "asn": 3378
+}
+        </pre>
+      </div>
+    </div>
+
+    <div class="footer">
+        <div>This API is free to use. It is provided as-is without warranty. Questions, comments: <a href="https://twitter.com/transitorykris">@transitorykris</a> on Twitter</div>
+    </div>
+</body>
