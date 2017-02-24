@@ -16,3 +16,9 @@ data:
 clean:
 	docker rmi transitorykris/geoful
 	rm -rf data
+
+up:
+	docker stack deploy geoful --compose-file docker-compose.yml
+
+down:
+	docker stack rm geoful
